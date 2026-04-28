@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo de Perda, Papel e Tesoura</title>
+</head>
+
+<body>
+    <!-- MENU -->
+    <section id="menu" class="show">
+        <div id="nome-jogo">Pedra, papel e tesoura</div>
+        <div class="opcoesMenu">
+            <input type="text" id="input-name-jogador" placeholder="Digite seu nome aqui (máx. 15 caractéres)">
+            <button type="submit" id="button-jogar-menu">JOGAR</button>
+        </div>
+    </section>
+
+    <!-- JOGO -->
+    <section id="jogo">
+        <button id="button-voltar-jogo" onclick="mudarSection(); recomecar()">VOLTAR</button>
+
+        <div class="containerPontucao">
+            <p id="voce">Você: <span id="span-voce"></span></p>
+            <p id="computador">Computador: <span id="span-computador"></span></p>
+        </div>
+
+        
+        <div class="containerGeral">
+            <div id="empate">EMPATE!</div>
+            <div id="conjuntoJogador">
+
+                <div class="nomes"></div>
+                <div class="mostrarEscolhas">
+                    <img src="gifs/bolinhas_pulando_transparente.gif"class="reticencias" alt="Gif de reticencias com animação" style="opacity: 75%;">
+                </div>
+                
+            </div>
+
+            <div class="versus">VS</div>
+
+            <div id="conjuntoComputador">
+
+                <div class="nomes">Computador</div>
+                <div class="mostrarEscolhas">
+                    <img src="gifs/bolinhas_pulando_transparente.gif"class="reticencias" alt="Gif de reticencias com animação" style="opacity: 75%;">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="containerEscolherEscolhas">
+            <div id="titulo-escolher-escolhas">Escolha seu movimento:</div>
+            <div class="conjuntoEscolhasJogador">
+                <div class="opcoesEscolhasJogador" id="escolha-jogador-pedra"><img
+                        src="imagens/Fa-Team-Fontawesome-Emoji-FontAwesome-Emoji-Hand-Back-Fist.512 (1).svg"
+                        alt="Ícone de mão - pedra">Pedra</div>
+                <div class="opcoesEscolhasJogador" id="escolha-jogador-papel"><img src="imagens/715399.svg"
+                        alt="Ícone de mão - papel">Papel</div>
+                <div class="opcoesEscolhasJogador" id="escolha-jogador-tesoura"><img
+                        src="imagens/OIP-removebg-preview.svg" alt="Ícone de mão - tesoura">Tesoura</div>
+            </div>
+        </div>
+        <div class="popUpVencedorJ">
+            <p class="p-principal-pop-ups">VOCÊ GANHOU</p>
+            <div class="buttons">
+                <button type="button" class="buttonInicio-popUp" onclick="recomecar(); mudarSection()">Inicío</button>
+                <button type="button" class="buttonRecomecarGanhou" onclick="recomecar()">Recomeçar</button>
+            </div>
+        </div>
+        <div class="popUpVencedorC">
+            <p class="p-principal-pop-ups">VOCÊ PERDEU</p>
+            <div class="buttons">
+                <button type="button" class="buttonInicio-popUp" onclick="recomecar(); mudarSection()">Inicío</button>
+                <button type="button" class="buttonRecomecarPerdeu" onclick="recomecar()">Recomeçar</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

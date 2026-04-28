@@ -1,0 +1,6 @@
+Fazer uma tela igual a do https://nameonwheel.com/pt/rock-paper-scissor#google_vignette, porem quando  decisao for tomada aparecer se ganhou ou perdeu em 
+cima de tudo da tela e antes do player selecionar algo deve estar sem maos na tela, deixar mais intuitivo
+
+https://rockpaperscissorsgame.org/pt
+
+------- https://wutools.com/pt/jogos/pedra-papel-tesoura
